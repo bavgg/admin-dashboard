@@ -17,13 +17,21 @@ import {
   BarChartSolid,
 } from "./icons";
 
-export const navigation = [
+type navigationType = {
+  title: string,
+  links: {
+    name: string,
+    icon: JSX.Element
+  }[]
+}
+
+export const navigation: navigationType[] = [
   {
     title: "Dashboard",
     links: [
       {
-        name: "ecommerce",
-        icon: <ShoppingBag fill="black" width="24" height="24" />,
+        name: "Ecommerce",
+        icon: <ShoppingBag fill="none" width="24" height="24" />,
       },
     ],
   },
@@ -32,16 +40,16 @@ export const navigation = [
     title: "Pages",
     links: [
       {
-        name: "orders",
-        icon: <ShoppingCart fill="black" width="24" height="24" />,
+        name: "Orders",
+        icon: <ShoppingCart fill="none" width="24" height="24" />,
       },
       {
-        name: "employees",
-        icon: <Employees fill="black" width="24" height="24" />,
+        name: "Employees",
+        icon: <Employees fill="none" width="24" height="24" />,
       },
       {
-        name: "customers",
-        icon: <Customers fill="black" width="24" height="24" />,
+        name: "Customers",
+        icon: <Customers fill="currentColor" width="24" height="24" />,
       },
     ],
   },
@@ -49,20 +57,20 @@ export const navigation = [
     title: "Apps",
     links: [
       {
-        name: "calendar",
-        icon: <Calendar fill="black" width="24" height="24" />,
+        name: "Calendar",
+        icon: <Calendar fill="currentColor" width="24" height="24" />,
       },
       {
-        name: "kanban",
-        icon: <Board fill="black" width="24" height="24" />,
+        name: "Kanban",
+        icon: <Board fill="none" width="24" height="24" />,
       },
       {
-        name: "editor",
-        icon: <Edit fill="black" width="24" height="24" />,
+        name: "Editor",
+        icon: <Edit fill="none" width="24" height="24" />,
       },
       {
-        name: "color-picker",
-        icon: <Swatch fill="black" width="24" height="24" />,
+        name: "Color-Picker",
+        icon: <Swatch fill="none" width="24" height="24" />,
       },
     ],
   },
@@ -70,37 +78,37 @@ export const navigation = [
     title: "Charts",
     links: [
       {
-        name: "line",
-        icon: <LineChart fill="black" width="24" height="24" />,
+        name: "Line",
+        icon: <LineChart fill="none" width="24" height="24" />,
       },
       {
-        name: "area",
-        icon: <AreaChart fill="black" width="24" height="24" />,
+        name: "Area",
+        icon: <AreaChart fill="currentColor" width="24" height="24" />,
       },
 
       {
-        name: "bar",
-        icon: <BarChart fill="black" width="24" height="24" />,
+        name: "Bar",
+        icon: <BarChart fill="none" width="24" height="24" />,
       },
       {
-        name: "pie",
-        icon: <PieChart fill="black" width="24" height="24" />,
+        name: "Pie",
+        icon: <PieChart fill="none" width="24" height="24" />,
       },
       {
-        name: "financial",
-        icon: <Calculator fill="black" width="24" height="24" />,
+        name: "Financial",
+        icon: <Calculator fill="none" width="24" height="24" />,
       },
       {
-        name: "color-mapping",
-        icon: <ColorMap fill="black" width="24" height="24" />,
+        name: "Color-Mapping",
+        icon: <ColorMap fill="none" width="24" height="24" />,
       },
       {
-        name: "pyramid",
-        icon: <Pyramid fill="black" width="24" height="24" />,
+        name: "Pyramid",
+        icon: <Pyramid fill="currentColor" width="24" height="24" />,
       },
       {
-        name: "stacked",
-        icon: <BarChartSolid fill="black" width="24" height="24" />,
+        name: "Stacked",
+        icon: <BarChartSolid fill="currentColor" width="24" height="24" />,
       },
     ],
   },

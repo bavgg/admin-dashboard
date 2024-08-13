@@ -1,11 +1,14 @@
 
 import './App.css'
+import Sidebar from './components/Sidebar'
 
 function App() {
 
   return (
     <>
-      <h1 className='text-sky-300'>hello, world!</h1>
+      <div className=' fixed w-72'>
+        <Sidebar />
+      </div>
     </>
   )
 }
