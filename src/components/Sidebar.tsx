@@ -1,9 +1,14 @@
+import { useContext } from "react";
 import { navigation } from "../assets/data";
 import { User } from "../assets/icons";
+import { SidebarContext } from "../contexts/SidebarContext";
 
 function Sidebar() {
+    const context = useContext(SidebarContext);
+    if(!context) throw new Error("SidebarContext must be used within a PlayerProvider");
+    const { sidebarRef } = context;
   return (
-    <div className=" hidden w-auto h-screen overflow-auto lg:flex flex-col gap-8 p-8 text-gray-500">
+    <div ref={sidebarRef} className=" hidden w-auto h-screen overflow-auto lg:flex flex-col gap-8 p-8 text-gray-500">
         {/* admin */}
         <div className="flex gap-4 items-center pb-4 text-gray-700">
             <User fill="currentColor" width="24" height="24"/>
