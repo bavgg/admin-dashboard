@@ -40,14 +40,14 @@ function Navbar() {
       </div>
       <div className="flex gap-4 items-center">
         <div className="p-2 rounded-full border-gray-100 border">
-          <ShoppingCart fill="currentColor" width="24" height="24" />
+          <ShoppingCart fill="white" width="24" height="24" />
         </div>
         <div className="relative p-2 rounded-full border-gray-100 border">
           <div className="absolute top-0 right-0 bg-sky-400 h-3 w-3 rounded-full"></div>
-          <ChatBubble fill="currentColor" width="24" height="24" />
+          <ChatBubble fill="white" width="24" height="24" />
         </div>
         <div className="relative p-2 rounded-full border-gray-100 border">
-          <Bell fill="currentColor" width="24" height="24" />
+          <Bell fill="white" width="24" height="24" />
           <div className="absolute top-0 right-0 bg-sky-400 h-3 w-3 rounded-full"></div>
         </div>
         <User fill="currentColor" width="42" height="42" />

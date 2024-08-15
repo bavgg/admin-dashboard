@@ -17,7 +17,7 @@ import {
   BarChartSolid,
 } from "./icons";
 
-type navigationType = {
+type linkType = {
   title: string,
   links: {
     name: string,
@@ -25,13 +25,13 @@ type navigationType = {
   }[]
 }
 
-export const navigation: navigationType[] = [
+export const links: linkType[] = [
   {
     title: "Dashboard",
     links: [
       {
         name: "Ecommerce",
-        icon: <ShoppingBag fill="none" width="20" height="20" />,
+        icon: <ShoppingBag fill="none" width="24" height="24" />,
       },
     ],
   },
@@ -41,15 +41,15 @@ export const navigation: navigationType[] = [
     links: [
       {
         name: "Orders",
-        icon: <ShoppingCart fill="none" width="20" height="20" />,
+        icon: <ShoppingCart fill="none" width="24" height="24" />,
       },
       {
         name: "Employees",
-        icon: <Employees fill="none" width="20" height="20" />,
+        icon: <Employees fill="none" width="24" height="24" />,
       },
       {
         name: "Customers",
-        icon: <Customers fill="currentColor" width="20" height="20" />,
+        icon: <Customers fill="currentColor" width="24" height="24" />,
       },
     ],
   },
@@ -58,19 +58,19 @@ export const navigation: navigationType[] = [
     links: [
       {
         name: "Calendar",
-        icon: <Calendar fill="currentColor" width="20" height="20" />,
+        icon: <Calendar fill="currentColor" width="24" height="24" />,
       },
       {
         name: "Kanban",
-        icon: <Board fill="none" width="20" height="20" />,
+        icon: <Board fill="none" width="24" height="24" />,
       },
       {
         name: "Editor",
-        icon: <Edit fill="none" width="20" height="20" />,
+        icon: <Edit fill="none" width="24" height="24" />,
       },
       {
         name: "Color-Picker",
-        icon: <Swatch fill="none" width="20" height="20" />,
+        icon: <Swatch fill="none" width="24" height="24" />,
       },
     ],
   },
@@ -79,36 +79,36 @@ export const navigation: navigationType[] = [
     links: [
       {
         name: "Line",
-        icon: <LineChart fill="none" width="20" height="20" />,
+        icon: <LineChart fill="none" width="24" height="24" />,
       },
       {
         name: "Area",
-        icon: <AreaChart fill="currentColor" width="20" height="20" />,
+        icon: <AreaChart fill="currentColor" width="24" height="24" />,
       },
 
       {
         name: "Bar",
-        icon: <BarChart fill="none" width="20" height="20" />,
+        icon: <BarChart fill="none" width="24" height="24" />,
       },
       {
         name: "Pie",
-        icon: <PieChart fill="none" width="20" height="20" />,
+        icon: <PieChart fill="none" width="24" height="24" />,
       },
       {
         name: "Financial",
-        icon: <Calculator fill="none" width="20" height="20" />,
+        icon: <Calculator fill="none" width="24" height="24" />,
       },
       {
         name: "Color-Mapping",
-        icon: <ColorMap fill="none" width="20" height="20" />,
+        icon: <ColorMap fill="none" width="24" height="24" />,
       },
       {
         name: "Pyramid",
-        icon: <Pyramid fill="currentColor" width="20" height="20" />,
+        icon: <Pyramid fill="currentColor" width="24" height="24" />,
       },
       {
         name: "Stacked",
-        icon: <BarChartSolid fill="currentColor" width="20" height="20" />,
+        icon: <BarChartSolid fill="currentColor" width="24" height="24" />,
       },
     ],
   },
