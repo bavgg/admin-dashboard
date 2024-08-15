@@ -31,7 +31,7 @@ export const navigation: navigationType[] = [
     links: [
       {
         name: "Ecommerce",
-        icon: <ShoppingBag fill="none" width="24" height="24" />,
+        icon: <ShoppingBag fill="none" width="20" height="20" />,
       },
     ],
   },
@@ -41,15 +41,15 @@ export const navigation: navigationType[] = [
     links: [
       {
         name: "Orders",
-        icon: <ShoppingCart fill="none" width="24" height="24" />,
+        icon: <ShoppingCart fill="none" width="20" height="20" />,
       },
       {
         name: "Employees",
-        icon: <Employees fill="none" width="24" height="24" />,
+        icon: <Employees fill="none" width="20" height="20" />,
       },
       {
         name: "Customers",
-        icon: <Customers fill="currentColor" width="24" height="24" />,
+        icon: <Customers fill="currentColor" width="20" height="20" />,
       },
     ],
   },
@@ -58,19 +58,19 @@ export const navigation: navigationType[] = [
     links: [
       {
         name: "Calendar",
-        icon: <Calendar fill="currentColor" width="24" height="24" />,
+        icon: <Calendar fill="currentColor" width="20" height="20" />,
       },
       {
         name: "Kanban",
-        icon: <Board fill="none" width="24" height="24" />,
+        icon: <Board fill="none" width="20" height="20" />,
       },
       {
         name: "Editor",
-        icon: <Edit fill="none" width="24" height="24" />,
+        icon: <Edit fill="none" width="20" height="20" />,
       },
       {
         name: "Color-Picker",
-        icon: <Swatch fill="none" width="24" height="24" />,
+        icon: <Swatch fill="none" width="20" height="20" />,
       },
     ],
   },
@@ -79,36 +79,36 @@ export const navigation: navigationType[] = [
     links: [
       {
         name: "Line",
-        icon: <LineChart fill="none" width="24" height="24" />,
+        icon: <LineChart fill="none" width="20" height="20" />,
       },
       {
         name: "Area",
-        icon: <AreaChart fill="currentColor" width="24" height="24" />,
+        icon: <AreaChart fill="currentColor" width="20" height="20" />,
       },
 
       {
         name: "Bar",
-        icon: <BarChart fill="none" width="24" height="24" />,
+        icon: <BarChart fill="none" width="20" height="20" />,
       },
       {
         name: "Pie",
-        icon: <PieChart fill="none" width="24" height="24" />,
+        icon: <PieChart fill="none" width="20" height="20" />,
       },
       {
         name: "Financial",
-        icon: <Calculator fill="none" width="24" height="24" />,
+        icon: <Calculator fill="none" width="20" height="20" />,
       },
       {
         name: "Color-Mapping",
-        icon: <ColorMap fill="none" width="24" height="24" />,
+        icon: <ColorMap fill="none" width="20" height="20" />,
       },
       {
         name: "Pyramid",
-        icon: <Pyramid fill="currentColor" width="24" height="24" />,
+        icon: <Pyramid fill="currentColor" width="20" height="20" />,
       },
       {
         name: "Stacked",
-        icon: <BarChartSolid fill="currentColor" width="24" height="24" />,
+        icon: <BarChartSolid fill="currentColor" width="20" height="20" />,
       },
     ],
   },
