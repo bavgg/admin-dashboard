@@ -1,29 +1,15 @@
-import {
-  ShoppingBag,
-  ShoppingCart,
-  Employees,
-  Customers,
-  Calendar,
-  Board,
-  Edit,
-  Swatch,
-  LineChart,
-  AreaChart,
-  BarChart,
-  PieChart,
-  Calculator,
-  ColorMap,
-  Pyramid,
-  BarChartSolid,
-} from "./icons";
+import { ChartPieIcon, ChartBarIcon, ChevronDoubleUpIcon, CalculatorIcon, SwatchIcon, ChartBarSquareIcon, PresentationChartLineIcon, ShoppingBagIcon, UsersIcon, Calendari, ClipboardDocumentIcon, PencilSquareIcon, ArrowPathIcon, ShoppingCartIcon } from "@heroicons/react/24/outline";
+import { UserGroupIcon, PresentationChartLineIcon as PresentationChartLineIconSolid, ChartBarSquareIcon as ChartBarSquareIconSolid, CalendarIcon } from "@heroicons/react/24/solid";
+
+
 
 type linkType = {
-  title: string,
+  title: string;
   links: {
-    name: string,
-    icon: JSX.Element
-  }[]
-}
+    name: string;
+    icon: JSX.Element;
+  }[];
+};
 
 export const links: linkType[] = [
   {
@@ -31,7 +17,7 @@ export const links: linkType[] = [
     links: [
       {
         name: "Ecommerce",
-        icon: <ShoppingBag fill="none" width="24" height="24" />,
+        icon: <ShoppingBagIcon fill="none" width="24" height="24"/>,
       },
     ],
   },
@@ -41,15 +27,15 @@ export const links: linkType[] = [
     links: [
       {
         name: "Orders",
-        icon: <ShoppingCart fill="none" width="24" height="24" />,
+        icon: <ShoppingCartIcon fill="none" width="24" height="24"/>,
       },
       {
         name: "Employees",
-        icon: <Employees fill="none" width="24" height="24" />,
+        icon: <UsersIcon fill="none" width="24" height="24"/>,
       },
       {
         name: "Customers",
-        icon: <Customers fill="currentColor" width="24" height="24" />,
+        icon: <UserGroupIcon fill="currentColor" width="24" height="24"   />,
       },
     ],
   },
@@ -58,19 +44,19 @@ export const links: linkType[] = [
     links: [
       {
         name: "Calendar",
-        icon: <Calendar fill="currentColor" width="24" height="24" />,
+        icon: <CalendarIcon fill="currentColor" width="24" height="24"   />,
       },
       {
         name: "Kanban",
-        icon: <Board fill="none" width="24" height="24" />,
+        icon: <ClipboardDocumentIcon fill="none" width="24" height="24" />,
       },
       {
         name: "Editor",
-        icon: <Edit fill="none" width="24" height="24" />,
+        icon: <PencilSquareIcon fill="none" width="24" height="24" />,
       },
       {
         name: "Color-Picker",
-        icon: <Swatch fill="none" width="24" height="24" />,
+        icon: <SwatchIcon fill="none" width="24" height="24" />,
       },
     ],
   },
@@ -79,37 +65,77 @@ export const links: linkType[] = [
     links: [
       {
         name: "Line",
-        icon: <LineChart fill="none" width="24" height="24" />,
+        icon: <ChartBarSquareIcon fill="none" width="24" height="24" />,
       },
       {
         name: "Area",
-        icon: <AreaChart fill="currentColor" width="24" height="24" />,
+        icon: <ChartBarSquareIconSolid fill="currentColor" width="24" height="24"  />,
       },
 
       {
         name: "Bar",
-        icon: <BarChart fill="none" width="24" height="24" />,
+        icon: <ChartBarIcon fill="none" width="24" height="24" />,
       },
       {
         name: "Pie",
-        icon: <PieChart fill="none" width="24" height="24" />,
+        icon: <ChartPieIcon fill="none" width="24" height="24" />,
       },
       {
         name: "Financial",
-        icon: <Calculator fill="none" width="24" height="24" />,
+        icon: <CalculatorIcon fill="none" width="24" height="24" />,
       },
       {
         name: "Color-Mapping",
-        icon: <ColorMap fill="none" width="24" height="24" />,
+        icon: <SwatchIcon fill="none" width="24" height="24" />,
       },
       {
         name: "Pyramid",
-        icon: <Pyramid fill="currentColor" width="24" height="24" />,
+        icon: <ChevronDoubleUpIcon fill="none" width="24" height="24"   />,
       },
       {
         name: "Stacked",
-        icon: <BarChartSolid fill="currentColor" width="24" height="24" />,
+        icon: <PresentationChartLineIconSolid  fill="currentColor" width="24" height="24"  />,
       },
     ],
+  },
+];
+
+export const earningData = [
+  {
+    icon: <UsersIcon fill="none" width="24" height="24"  />,
+    amount: "39,354",
+    percentage: "-4%",
+    title: "Customers",
+    iconColor: "#03C9D7",
+    iconBg: "#E5FAFB",
+    pcColor: "red-600",
+  },
+  {
+    icon: <ShoppingBagIcon fill="none" width="24" height="24" />,
+    amount: "4,396",
+    percentage: "+23%",
+    title: "Products",
+    iconColor: "rgb(255, 244, 229)",
+    iconBg: "rgb(254, 201, 15)",
+    pcColor: "green-600",
+  },
+  {
+    icon: <ChartBarIcon fill="none" width="24" height="24" />,
+    amount: "423,39",
+    percentage: "+38%",
+    title: "Sales",
+    iconColor: "rgb(228, 106, 118)",
+    iconBg: "rgb(255, 244, 229)",
+
+    pcColor: "green-600",
+  },
+  {
+    icon: <ArrowPathIcon fill="none" width="24" height="24" />,
+    amount: "39,354",
+    percentage: "-12%",
+    title: "Refunds",
+    iconColor: "rgb(0, 194, 146)",
+    iconBg: "rgb(235, 250, 242)",
+    pcColor: "red-600",
   },
 ];

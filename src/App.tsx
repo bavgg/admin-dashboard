@@ -1,13 +1,17 @@
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
+import Home from "./pages/Home";
 
 function App() {
   return (
     <>
-      <div className=" flex h-screen">
+      <div className="grid grid-cols-[auto_1fr] h-screen ">
         <Sidebar />
-        <Navbar />
+        <div className="flex flex-col">
+          <Navbar />
+          <Home />
+        </div>
       </div>
     </>
   );

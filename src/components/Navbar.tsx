@@ -29,7 +29,7 @@ function Navbar() {
     }
   }
   return (
-    <div className="text-gray-500 p-8 w-screen h-20 flex justify-between items-center">
+    <div className=" text-gray-500 p-8 w-full h-20 flex justify-between items-center">
       <div className="flex gap-4 items-center">
         <div onClick={handleMenu} className=" cursor-pointer">
           <Menu fill="currentColor" width="24" height="24" />
