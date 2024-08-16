@@ -1,4 +1,7 @@
-import { earningData } from "../assets/data";
+import { earningData, LineChartData } from "../assets/data";
+import BarChart from "../components/charts/BarChart";
+import LineChart from "../components/charts/LineChart";
+
 
 function Home() {
   return (
@@ -10,16 +13,24 @@ function Home() {
         <button>Download</button>
       </div>
 
-      {/* presentation */}
+      {/* data */}
       <div className="grid grid-cols-2 grid-rows-2 gap-4 mt-4">
         {earningData.map(ed => (
           <div className="p-4 bg-white min-w-[">
               <div>{ed.icon}</div>
-              <div>{ed.amount}</div>
-              <div>{ed.percentage}</div>
+              <div className="flex gap-1">
+                <div>{ed.amount}</div>
+                <div>{ed.percentage}</div>
+              </div>
               <div>{ed.title}</div>
           </div>
         ))}
+      </div>
+
+      {/* charts */}
+      <div className="flex gap-4 h-[300px]">
+        <LineChart data={LineChartData}/>
+        <BarChart />
       </div>
     </div>
   );
