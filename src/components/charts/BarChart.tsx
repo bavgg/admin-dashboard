@@ -8,7 +8,7 @@ import { BarchartData } from "../../assets/data";
 function BarChart() {
     const tickValues = [0, 100, 200, 300, 400];
   return (
-    <div className=" w-[500px] bg-white mt-4">
+    <div className="rounded-md w-[500px] bg-white mt-4">
       <ResponsiveBar
         data={BarchartData}
         keys={["Budget", "Expense"]}
