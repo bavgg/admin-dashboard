@@ -25,7 +25,7 @@ function LineChart({ data }: LineChartProps) {
         axisLeft={null}
         enableGridX={false}
         enableGridY={false}
-        colors='#0ea5e9'
+        colors='#7ED3FC'
         pointSize={10}
         pointColor={{ from: 'color', modifiers: [] }}
         pointBorderWidth={2}

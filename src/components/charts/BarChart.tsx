@@ -1,5 +1,5 @@
 import { ResponsiveBar } from "@nivo/bar";
-import { BarchartData } from "../../assets/data";
+import { BarchartData } from "../../data/data";
 
 // type BarchartProps = {
 
@@ -17,7 +17,7 @@ function BarChart() {
         padding={0.5}
         valueScale={{ type: "linear" }}
         indexScale={{ type: "band", round: true }}
-        colors={({ id }) => id === "Budget" ? "#FF5733" : "#33C1FF"}
+        colors={({ id }) => id === "Budget" ? "#FDA5A5" : "#7ED3FC"}
 
         defs={[
           {

@@ -2,6 +2,7 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
 import Home from "./pages/Home";
+import Orders from "./pages/Orders";
 
 function App() {
   return (
@@ -10,7 +11,8 @@ function App() {
         <Sidebar />
         <div className="flex flex-col">
           <Navbar />
-          <Home />
+          {/* <Home /> */}
+          <Orders />
         </div>
       </div>
     </>

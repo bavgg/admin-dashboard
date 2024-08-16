@@ -1,4 +1,4 @@
-import { earningData, LineChartData } from "../assets/data";
+import { earningData, LineChartData } from "../data/data";
 import BarChart from "../components/charts/BarChart";
 import LineChart from "../components/charts/LineChart";
 
@@ -9,10 +9,10 @@ function Home() {
       <div className="p-8 bg-white rounded-md">
         <div>Earnings</div>
         <div>$63,223.72</div>
-        <button>Download</button>
+        <button className="bg-sky-400 px-2 rounded-md mt-4 text-white">Download</button>
       </div>
 
-      {/* data */}
+      {/*  */}
       <div className="grid grid-cols-2 grid-rows-2 gap-4 mt-4 rounded-md">
         {earningData.map((ed) => (
           <div key={ed.title} className="p-4 rounded-md bg-white min-w-[">
@@ -28,7 +28,7 @@ function Home() {
         ))}
       </div>
 
-      {/* charts */}
+      {/* revenue */}
       <div className="flex gap-4 h-[300px]">
         <LineChart data={LineChartData} />
         <BarChart />

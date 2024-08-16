@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { links } from "../assets/data";
+import { links } from "../data/data";
 import { User } from "../assets/icons";
 import { SidebarContext } from "../contexts/SidebarContext";
 
