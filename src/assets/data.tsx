@@ -14,6 +14,8 @@ import {
   ArrowPathIcon,
   ShoppingCartIcon,
 } from "@heroicons/react/24/outline";
+import { UsersIcon as UsersIconSolid, ShoppingBagIcon as ShoppingBagIconSolid, ChartBarIcon as ChartBarIconSolid, ArrowPathIcon as ArrowPathIconSolid } from "@heroicons/react/24/solid";
+
 import {
   UserGroupIcon,
   PresentationChartLineIcon as PresentationChartLineIconSolid,
@@ -128,7 +130,7 @@ export const links: linkType[] = [
 
 export const earningData = [
   {
-    icon: <UsersIcon fill="none" width="24" height="24" />,
+    icon: <UsersIconSolid fill="currentColor" width="24" height="24" />,
     amount: "39,354",
     percentage: "-4%",
     title: "Customers",
@@ -137,7 +139,7 @@ export const earningData = [
     pcColor: "red-600",
   },
   {
-    icon: <ShoppingBagIcon fill="none" width="24" height="24" />,
+    icon: <ShoppingBagIconSolid fill="currentColor" width="24" height="24" />,
     amount: "4,396",
     percentage: "+23%",
     title: "Products",
@@ -146,7 +148,7 @@ export const earningData = [
     pcColor: "green-600",
   },
   {
-    icon: <ChartBarIcon fill="none" width="24" height="24" />,
+    icon: <ChartBarIconSolid fill="currentColor" width="24" height="24" />,
     amount: "423,39",
     percentage: "+38%",
     title: "Sales",
@@ -156,7 +158,7 @@ export const earningData = [
     pcColor: "green-600",
   },
   {
-    icon: <ArrowPathIcon fill="none" width="24" height="24" />,
+    icon: <ArrowPathIconSolid fill="currentColor" width="24" height="24" />,
     amount: "39,354",
     percentage: "-12%",
     title: "Refunds",
