@@ -6,4 +6,8 @@
   body {
     @apply font-[300] text-base text-[#6C7180];
   }
+
+  :root {
+    --accent: #38bdf8;
+  }
 }
