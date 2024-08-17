@@ -20,14 +20,14 @@ function Sidebar() {
       </div>
 
       {links.map((link) => (
-        <div className="flex flex-col gap-4">
+        <div key={link.title} className="flex flex-col gap-4">
           {/* title */}
           <div className=" text-base">{link.title}</div>
 
           {/* links */}
           <div className="flex flex-col gap-8 ">
             {link.links.map((link) => (
-              <div className=" flex gap-2 items-center">
+              <div key={link.name} className=" flex gap-2 items-center">
                 <div>{link.icon}</div>
 
                 <span className=" whitespace-nowrap">{link.name}</span>
