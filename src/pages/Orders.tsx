@@ -5,7 +5,10 @@ import { PaginationContext } from "../contexts/PaginationContext";
 
 function Orders() {
   const [orders, setOrders] = useState(ordersData);
-  console.log("🚀 ~ Orders ~ orders:", orders);
+  const [itemClicked, setItemClicked] = useState(false);
+  const [customerClicked, setCustomerClicked] = useState(false);
+  const [amountClicked, setAmountClicked] = useState(false);
+
   const context = useContext(PaginationContext);
   if (!context) throw new Error("Provide cotext first");
   const { setTotalPages, contentPerPage, currentPage } = context;
@@ -55,12 +58,21 @@ function Orders() {
     if (sortBy === "item") {
       const sortedOrders = sortOrdersByItem(orders);
       setOrders(sortedOrders);
+      setItemClicked(true);
+      setCustomerClicked(false);
+      setAmountClicked(false);
     } else if (sortBy === "customer") {
       const sortedOrders = sortOrdersByCustomer(orders);
       setOrders(sortedOrders);
+      setCustomerClicked(true);
+      setItemClicked(false);
+      setAmountClicked(false);
     } else if (sortBy === "amount") {
       const sortedOrders = sortOrdersByTotalAmount(orders);
       setOrders(sortedOrders);
+      setAmountClicked(true);
+      setCustomerClicked(false);
+      setItemClicked(false);
     }
   }
 
@@ -71,24 +83,25 @@ function Orders() {
         <span>Image</span>
         <div
           onClick={() => handleSort(orders, "item")}
-          className="flex gap-4 items-center"
+          className="flex gap-4 items-center cursor-pointer"
         >
           <span>Item</span>
-          <ChevronUpIcon fill="none" width="20" height="20" />
+          {itemClicked && (<ChevronUpIcon fill="none" width="20" height="20" />)}
+          
         </div>
         <div
           onClick={() => handleSort(orders, "customer")}
-          className="flex gap-4 items-center"
+          className="flex gap-4 items-center cursor-pointer"
         >
           <span>Customer Name</span>
-          <ChevronUpIcon fill="none" width="20" height="20" />
+          {customerClicked && (<ChevronUpIcon fill="none" width="20" height="20" />)}
         </div>
         <div
           onClick={() => handleSort(orders, "amount")}
-          className="flex gap-4 items-center"
+          className="flex gap-4 items-center cursor-pointer"
         >
           <span>Total Amount</span>
-          <ChevronUpIcon fill="none" width="20" height="20" />
+          {amountClicked && (<ChevronUpIcon fill="none" width="20" height="20" />)}
         </div>
 
         <span>Status</span>
