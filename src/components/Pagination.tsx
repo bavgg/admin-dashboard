@@ -22,11 +22,15 @@ function Pagination() {
       return previousPage;
     });
   }
+
+  function handleButton(page: number) {
+    setCurrentPage(page);
+  }
   return (
-    <div className="flex gap-1 mt-4">
+    <div className="flex gap-1 mt-4 fixed bottom-0">
       {/* back */}
       <button
-        onClick={() => handlePrevious()}
+        onClick={handlePrevious}
         className="px-4 border border-[inherit] rounded-md"
       >
         Back
@@ -35,6 +39,7 @@ function Pagination() {
       {/* buttons */}
       {[...Array(totalPages).keys()].map((key) => (
         <button
+          onClick={() => handleButton(key + 1)}
           key={key}
           style={
             currentPage === key + 1
@@ -49,7 +54,7 @@ function Pagination() {
 
       {/* next */}
       <button
-        onClick={() => handleNext()}
+        onClick={handleNext}
         className="px-4 border border-[inherit] rounded-md"
       >
         Next
