@@ -69,7 +69,7 @@ function Customers() {
           <input
             onChange={handleMainCheckboxChange}
             type="checkbox"
-            className=" h-[20px] w-[20px]"
+            className=" h-[20px] w-[20px] cursor-pointer"
           />
           <span>Name</span>
           <span>Project Name</span>
@@ -86,7 +86,7 @@ function Customers() {
                 onChange={() => handleCheckboxChange(customer.customer_id)}
                 checked={selectedIds.includes(customer.customer_id)}
                 type="checkbox"
-                className=" h-[20px] w-[20px]"
+                className=" h-[20px] w-[20px] cursor-pointer"
               />
 
               {/* customer name */}

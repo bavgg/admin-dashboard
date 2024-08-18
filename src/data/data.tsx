@@ -84,31 +84,31 @@ export const links: linkType[] = [
       },
     ],
   },
-  {
-    title: "Apps",
-    links: [
-      {
-        name: "Calendar",
-        icon: <CalendarIcon fill="currentColor" width="24" height="24" />,
-        path: '/',
-      },
-      {
-        name: "Kanban",
-        icon: <ClipboardDocumentIcon fill="none" width="24" height="24" />,
-        path: '/',
-      },
-      {
-        name: "Editor",
-        icon: <PencilSquareIcon fill="none" width="24" height="24" />,
-        path: '/',
-      },
-      {
-        name: "Color-Picker",
-        icon: <SwatchIcon fill="none" width="24" height="24" />,
-        path: '/',
-      },
-    ],
-  },
+  // {
+  //   title: "Apps",
+  //   links: [
+  //     {
+  //       name: "Calendar",
+  //       icon: <CalendarIcon fill="currentColor" width="24" height="24" />,
+  //       path: '/',
+  //     },
+  //     {
+  //       name: "Kanban",
+  //       icon: <ClipboardDocumentIcon fill="none" width="24" height="24" />,
+  //       path: '/',
+  //     },
+  //     {
+  //       name: "Editor",
+  //       icon: <PencilSquareIcon fill="none" width="24" height="24" />,
+  //       path: '/',
+  //     },
+  //     {
+  //       name: "Color-Picker",
+  //       icon: <SwatchIcon fill="none" width="24" height="24" />,
+  //       path: '/',
+  //     },
+  //   ],
+  // },
   {
     title: "Charts",
     links: [
@@ -135,21 +135,21 @@ export const links: linkType[] = [
         icon: <ChartPieIcon fill="none" width="24" height="24" />,
         path: '/pie',
       },
-      {
-        name: "Financial",
-        icon: <CalculatorIcon fill="none" width="24" height="24" />,
-        path: '/',
-      },
+      // {
+      //   name: "Financial",
+      //   icon: <CalculatorIcon fill="none" width="24" height="24" />,
+      //   path: '/',
+      // },
       {
         name: "Color-Mapping",
         icon: <SwatchIcon fill="none" width="24" height="24" />,
         path: '/color',
       },
-      {
-        name: "Pyramid",
-        icon: <ChevronDoubleUpIcon fill="none" width="24" height="24" />,
-        path: '/',
-      },
+      // {
+      //   name: "Pyramid",
+      //   icon: <ChevronDoubleUpIcon fill="none" width="24" height="24" />,
+      //   path: '/',
+      // },
       {
         name: "Stacked",
         icon: (
