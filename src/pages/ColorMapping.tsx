@@ -4,6 +4,9 @@ import { colorMappingData } from "../data/data";
 function ColorMapping() {
   return (
     <div className="h-[500px]">
+      <div>Chart</div>
+      <div className=" text-3xl font-[500]">Color Mapping</div>
+      <div className="flex justify-center text-xl">USA Climate - Weather By Month</div>
       <ResponsiveBar
         data={colorMappingData}
         keys={["temp"]}

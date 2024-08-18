@@ -12,6 +12,9 @@ import { areaChartData } from "../data/data";
 function Area() {
   return (
     <div className="h-[500px]">
+        <div>Chart</div>
+      <div className=" text-3xl font-[500]">Area</div>
+      <div className="flex justify-center text-xl">Inflation Rate in percentage</div>
       <ResponsiveAreaBump
         data={areaChartData}
         margin={{ top: 40, right: 100, bottom: 40, left: 100 }}

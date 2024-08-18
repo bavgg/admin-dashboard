@@ -3,6 +3,9 @@ import { pieChartData } from "../data/data";
 function Pie() {
   return (
     <div className="h-[500px]">
+      <div>Chart</div>
+      <div className=" text-3xl font-[500]">Pie</div>
+      <div className="flex justify-center text-xl">Project Cost Breakdown</div>
       <ResponsivePie
         data={pieChartData}
         margin={{ top: 40, right: 80, bottom: 80, left: 80 }}

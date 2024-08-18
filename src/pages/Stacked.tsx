@@ -3,6 +3,9 @@ import { BarchartData } from "../data/data";
 
 function Stacked() {
   return <div className="h-[500px]">
+    <div>Chart</div>
+    <div className=" text-3xl font-[500]">Stacked</div>
+    <div className="flex justify-center text-xl">Revenue Breakdown</div>
     <ResponsiveBar
         data={BarchartData}
         keys={["Budget", "Expense"]}

@@ -4,6 +4,9 @@ import { barChartData } from "../data/data";
 function Bar() {
   return (
     <div className="h-[700px]">
+      <div>Chart</div>
+      <div className=" text-3xl font-[500]">Bar</div>
+      <div className="flex justify-center text-xl">Olympic Medal Counts - RIO</div>
       <ResponsiveBar
         data={barChartData}
         keys={[
