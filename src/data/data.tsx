@@ -1563,3 +1563,565 @@ export const employeesData = [
       avatar2,
   },
 ];
+
+export const customersData = [
+  {
+    customer_id: 1001,
+    customer_name: 'Nirav Joshi',
+    customer_email: 'nirav@gmail.com',
+    customer_image:
+      avatar2,
+    project_name: 'Hosting Press HTML',
+    status: 'Active',
+    status_bg: '#BEE1E6',
+    weeks: '40',
+    budget: '$2.4k',
+    location: 'India',
+  },
+  {
+    customer_id: 1002,
+
+    customer_name: 'Sunil Joshi',
+    customer_email: 'sunil@gmail.com',
+    project_name: 'Elite Admin',
+    status: 'Active',
+    customer_image:
+      avatar3,
+
+    status_bg: '#BEE1E6',
+    weeks: '11',
+    budget: '$3.9k',
+    location: 'India',
+  },
+  {
+    customer_id: 1003,
+
+    customer_name: 'Andrew McDownland',
+    customer_email: 'andrew@gmail.com',
+    project_name: 'Real Homes WP Theme',
+    status: 'Pending',
+    customer_image:
+      avatar4,
+    status_bg: '#FFF1E6',
+    weeks: '19',
+    budget: '$24.5k',
+    location: 'USA',
+  },
+  {
+    customer_id: 1004,
+
+    customer_name: 'Christopher Jamil',
+    customer_email: 'jamil@gmail.com',
+    project_name: 'MedicalPro WP Theme',
+    status: 'Completed',
+    customer_image:
+      avatar,
+    status_bg: '#BEE1E6',
+    weeks: '34',
+    budget: '$16.5k',
+    location: 'USA',
+  },
+  {
+    customer_id: 1005,
+
+    customer_name: 'Michael',
+    customer_email: 'michael@gmail.com',
+    project_name: 'Weekly WP Theme',
+    status: 'Cancel',
+    customer_image:
+      avatar2,
+    status_bg: '#FDE2E4',
+    weeks: '34',
+    budget: '$16.5k',
+    location: 'USA',
+  },
+  {
+    customer_id: 1006,
+    customer_name: 'Nirav Joshi',
+    customer_email: 'nirav@gmail.com',
+    customer_image:
+      avatar2,
+    project_name: 'Hosting Press HTML',
+    status: 'Active',
+    status_bg: '#BEE1E6',
+    weeks: '40',
+    budget: '$2.4k',
+    location: 'India',
+  },
+  {
+    customer_id: 1007,
+
+    customer_name: 'Sunil Joshi',
+    customer_email: 'sunil@gmail.com',
+    project_name: 'Elite Admin',
+    status: 'Active',
+    customer_image:
+      avatar3,
+
+    status_bg: '#BEE1E6',
+    weeks: '11',
+    budget: '$3.9k',
+    location: 'India',
+  },
+  {
+    customer_id: 1008,
+
+    customer_name: 'Andrew McDownland',
+    customer_email: 'andrew@gmail.com',
+    project_name: 'Real Homes WP Theme',
+    status: 'Pending',
+    customer_image:
+      avatar4,
+    status_bg: '#FFF1E6',
+    weeks: '19',
+    budget: '$24.5k',
+    location: 'USA',
+  },
+  {
+    customer_id: 1009,
+
+    customer_name: 'Christopher Jamil',
+    customer_email: 'jamil@gmail.com',
+    project_name: 'MedicalPro WP Theme',
+    status: 'Completed',
+    customer_image:
+      avatar,
+    status_bg: '#BEE1E6',
+    weeks: '34',
+    budget: '$16.5k',
+    location: 'USA',
+  },
+  {
+    customer_id: 1010,
+
+    customer_name: 'Michael',
+    customer_email: 'michael@gmail.com',
+    project_name: 'Weekly WP Theme',
+    status: 'Cancel',
+    customer_image:
+      avatar2,
+    status_bg: '#FDE2E4',
+    weeks: '34',
+    budget: '$16.5k',
+    location: 'USA',
+  },
+  {
+    customer_id: 1011,
+    customer_name: 'Nirav Joshi',
+    customer_email: 'nirav@gmail.com',
+    customer_image:
+      avatar2,
+    project_name: 'Hosting Press HTML',
+    status: 'Active',
+    status_bg: '#BEE1E6',
+    weeks: '40',
+    budget: '$2.4k',
+    location: 'India',
+  },
+  {
+    customer_id: 1012,
+
+    customer_name: 'Sunil Joshi',
+    customer_email: 'sunil@gmail.com',
+    project_name: 'Elite Admin',
+    status: 'Active',
+    customer_image:
+      avatar3,
+
+    status_bg: '#BEE1E6',
+    weeks: '11',
+    budget: '$3.9k',
+    location: 'India',
+  },
+  {
+    customer_id: 1013,
+
+    customer_name: 'Andrew McDownland',
+    customer_email: 'andrew@gmail.com',
+    project_name: 'Real Homes WP Theme',
+    status: 'Pending',
+    customer_image:
+      avatar4,
+    status_bg: '#FFF1E6',
+    weeks: '19',
+    budget: '$24.5k',
+    location: 'USA',
+  },
+  {
+    customer_id: 1014,
+
+    customer_name: 'Christopher Jamil',
+    customer_email: 'jamil@gmail.com',
+    project_name: 'MedicalPro WP Theme',
+    status: 'Completed',
+    customer_image:
+      avatar,
+    status_bg: '#BEE1E6',
+    weeks: '34',
+    budget: '$16.5k',
+    location: 'USA',
+  },
+  {
+    customer_id: 1015,
+
+    customer_name: 'Michael',
+    customer_email: 'michael@gmail.com',
+    project_name: 'Weekly WP Theme',
+    status: 'Cancel',
+    customer_image:
+      avatar2,
+    status_bg: '#FDE2E4',
+    weeks: '34',
+    budget: '$16.5k',
+    location: 'USA',
+  },
+  {
+    customer_id: 1016,
+    customer_name: 'Nirav Joshi',
+    customer_email: 'nirav@gmail.com',
+    customer_image:
+      avatar2,
+    project_name: 'Hosting Press HTML',
+    status: 'Active',
+    status_bg: '#BEE1E6',
+    weeks: '40',
+    budget: '$2.4k',
+    location: 'India',
+  },
+  {
+    customer_id: 1017,
+
+    customer_name: 'Sunil Joshi',
+    customer_email: 'sunil@gmail.com',
+    project_name: 'Elite Admin',
+    status: 'Active',
+    customer_image:
+      avatar3,
+
+    status_bg: '#BEE1E6',
+    weeks: '11',
+    budget: '$3.9k',
+    location: 'India',
+  },
+  {
+    customer_id: 1018,
+
+    customer_name: 'Andrew McDownland',
+    customer_email: 'andrew@gmail.com',
+    project_name: 'Real Homes WP Theme',
+    status: 'Pending',
+    customer_image:
+      avatar4,
+    status_bg: '#FFF1E6',
+    weeks: '19',
+    budget: '$24.5k',
+    location: 'USA',
+  },
+  {
+    customer_id: 1019,
+
+    customer_name: 'Christopher Jamil',
+    customer_email: 'jamil@gmail.com',
+    project_name: 'MedicalPro WP Theme',
+    status: 'Completed',
+    customer_image:
+      avatar,
+    status_bg: '#BEE1E6',
+    weeks: '34',
+    budget: '$16.5k',
+    location: 'USA',
+  },
+  {
+    customer_id: 1020,
+
+    customer_name: 'Michael',
+    customer_email: 'michael@gmail.com',
+    project_name: 'Weekly WP Theme',
+    status: 'Cancel',
+    customer_image:
+      avatar2,
+    status_bg: '#FDE2E4',
+    weeks: '34',
+    budget: '$16.5k',
+    location: 'USA',
+  },
+  {
+    customer_id: 1021,
+    customer_name: 'Nirav Joshi',
+    customer_email: 'nirav@gmail.com',
+    customer_image:
+      avatar2,
+    project_name: 'Hosting Press HTML',
+    status: 'Active',
+    status_bg: '#BEE1E6',
+    weeks: '40',
+    budget: '$2.4k',
+    location: 'India',
+  },
+  {
+    customer_id: 1022,
+
+    customer_name: 'Sunil Joshi',
+    customer_email: 'sunil@gmail.com',
+    project_name: 'Elite Admin',
+    status: 'Active',
+    customer_image:
+      avatar3,
+
+    status_bg: '#BEE1E6',
+    weeks: '11',
+    budget: '$3.9k',
+    location: 'India',
+  },
+  {
+    customer_id: 1023,
+
+    customer_name: 'Andrew McDownland',
+    customer_email: 'andrew@gmail.com',
+    project_name: 'Real Homes WP Theme',
+    status: 'Pending',
+    customer_image:
+      avatar4,
+    status_bg: '#FFF1E6',
+    weeks: '19',
+    budget: '$24.5k',
+    location: 'USA',
+  },
+  {
+    customer_id: 1024,
+
+    customer_name: 'Christopher Jamil',
+    customer_email: 'jamil@gmail.com',
+    project_name: 'MedicalPro WP Theme',
+    status: 'Completed',
+    customer_image:
+      avatar,
+    status_bg: '#BEE1E6',
+    weeks: '34',
+    budget: '$16.5k',
+    location: 'USA',
+  },
+  {
+    customer_id: 1025,
+
+    customer_name: 'Michael',
+    customer_email: 'michael@gmail.com',
+    project_name: 'Weekly WP Theme',
+    status: 'Cancel',
+    customer_image:
+      avatar2,
+    status_bg: '#FDE2E4',
+    weeks: '34',
+    budget: '$16.5k',
+    location: 'USA',
+  },
+  {
+    customer_id: 1026,
+    customer_name: 'Nirav Joshi',
+    customer_email: 'nirav@gmail.com',
+    customer_image:
+      avatar2,
+    project_name: 'Hosting Press HTML',
+    status: 'Active',
+    status_bg: '#BEE1E6',
+    weeks: '40',
+    budget: '$2.4k',
+    location: 'India',
+  },
+  {
+    customer_id: 1027,
+
+    customer_name: 'Sunil Joshi',
+    customer_email: 'sunil@gmail.com',
+    project_name: 'Elite Admin',
+    status: 'Active',
+    customer_image:
+      avatar3,
+
+    status_bg: '#BEE1E6',
+    weeks: '11',
+    budget: '$3.9k',
+    location: 'India',
+  },
+  {
+    customer_id: 1028,
+
+    customer_name: 'Andrew McDownland',
+    customer_email: 'andrew@gmail.com',
+    project_name: 'Real Homes WP Theme',
+    status: 'Pending',
+    customer_image:
+      avatar4,
+    status_bg: '#FFF1E6',
+    weeks: '19',
+    budget: '$24.5k',
+    location: 'USA',
+  },
+  {
+    customer_id: 1029,
+
+    customer_name: 'Christopher Jamil',
+    customer_email: 'jamil@gmail.com',
+    project_name: 'MedicalPro WP Theme',
+    status: 'Completed',
+    customer_image:
+      avatar,
+    status_bg: '#BEE1E6',
+    weeks: '34',
+    budget: '$16.5k',
+    location: 'USA',
+  },
+  {
+    customer_id: 1030,
+
+    customer_name: 'Michael',
+    customer_email: 'michael@gmail.com',
+    project_name: 'Weekly WP Theme',
+    status: 'Cancel',
+    customer_image:
+      avatar2,
+    status_bg: '#FDE2E4',
+    weeks: '34',
+    budget: '$16.5k',
+    location: 'USA',
+  },
+  {
+    customer_id: 1031,
+    customer_name: 'Nirav Joshi',
+    customer_email: 'nirav@gmail.com',
+    customer_image:
+      avatar2,
+    project_name: 'Hosting Press HTML',
+    status: 'Active',
+    status_bg: '#BEE1E6',
+    weeks: '40',
+    budget: '$2.4k',
+    location: 'India',
+  },
+  {
+    customer_id: 1032,
+
+    customer_name: 'Sunil Joshi',
+    customer_email: 'sunil@gmail.com',
+    project_name: 'Elite Admin',
+    status: 'Active',
+    customer_image:
+      avatar3,
+
+    status_bg: '#BEE1E6',
+    weeks: '11',
+    budget: '$3.9k',
+    location: 'India',
+  },
+  {
+    customer_id: 1033,
+
+    customer_name: 'Andrew McDownland',
+    customer_email: 'andrew@gmail.com',
+    project_name: 'Real Homes WP Theme',
+    status: 'Pending',
+    customer_image:
+      avatar4,
+    status_bg: '#FFF1E6',
+    weeks: '19',
+    budget: '$24.5k',
+    location: 'USA',
+  },
+  {
+    customer_id: 1034,
+
+    customer_name: 'Christopher Jamil',
+    customer_email: 'jamil@gmail.com',
+    project_name: 'MedicalPro WP Theme',
+    status: 'Completed',
+    customer_image:
+      avatar,
+    status_bg: '#BEE1E6',
+    weeks: '34',
+    budget: '$16.5k',
+    location: 'USA',
+  },
+  {
+    customer_id: 1035,
+
+    customer_name: 'Michael',
+    customer_email: 'michael@gmail.com',
+    project_name: 'Weekly WP Theme',
+    status: 'Cancel',
+    customer_image:
+      avatar2,
+    status_bg: '#FDE2E4',
+    weeks: '34',
+    budget: '$16.5k',
+    location: 'USA',
+  },
+  {
+    customer_id: 1036,
+    customer_name: 'Nirav Joshi',
+    customer_email: 'nirav@gmail.com',
+    customer_image:
+      avatar2,
+    project_name: 'Hosting Press HTML',
+    status: 'Active',
+    status_bg: '#BEE1E6',
+    weeks: '40',
+    budget: '$2.4k',
+    location: 'India',
+  },
+  {
+    customer_id: 1037,
+
+    customer_name: 'Sunil Joshi',
+    customer_email: 'sunil@gmail.com',
+    project_name: 'Elite Admin',
+    status: 'Active',
+    customer_image:
+      avatar3,
+
+    status_bg: '#BEE1E6',
+    weeks: '11',
+    budget: '$3.9k',
+    location: 'India',
+  },
+  {
+    customer_id: 1038,
+
+    customer_name: 'Andrew McDownland',
+    customer_email: 'andrew@gmail.com',
+    project_name: 'Real Homes WP Theme',
+    status: 'Pending',
+    customer_image:
+      avatar4,
+    status_bg: '#FFF1E6',
+    weeks: '19',
+    budget: '$24.5k',
+    location: 'USA',
+  },
+  {
+    customer_id: 1039,
+    customer_name: 'Christopher Jamil',
+    customer_email: 'jamil@gmail.com',
+    project_name: 'MedicalPro WP Theme',
+    status: 'Completed',
+    customer_image:
+      avatar,
+    status_bg: '#BEE1E6',
+    weeks: '34',
+    budget: '$16.5k',
+    location: 'USA',
+  },
+  {
+    customer_id: 1040,
+    customer_name: 'Michael',
+    customer_email: 'michael@gmail.com',
+    project_name: 'Weekly WP Theme',
+    status: 'Cancel',
+    customer_image:
+      avatar2,
+    status_bg: '#FDE2E4',
+    weeks: '34',
+    budget: '$16.5k',
+    location: 'USA',
+  },
+
+];

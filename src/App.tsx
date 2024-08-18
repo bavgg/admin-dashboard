@@ -2,6 +2,7 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 import Pagination from "./components/Pagination";
 import Sidebar from "./components/Sidebar";
+import Customers from "./pages/Customers";
 import Employees from "./pages/Employees";
 import Home from "./pages/Home";
 import Orders from "./pages/Orders";
@@ -16,7 +17,8 @@ function App() {
           {/* <Home /> */}
           {/* <Orders /> */}
           
-          <Employees />
+          {/* <Employees /> */}
+          <Customers />
           <Pagination />
         </div>
       </div>
