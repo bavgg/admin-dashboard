@@ -1,10 +1,25 @@
-import { useState } from "react";
+import { useState, useContext, useEffect } from "react";
 import { customersData } from "../data/data";
 import { TrashIcon } from "@heroicons/react/24/outline";
+import { PaginationContext } from "../contexts/PaginationContext";
+
 function Customers() {
   const [customers, setCustomers] = useState(customersData);
   const [selectedIds, setSelectedIds] = useState<number[]>([]);
   const [isMainChecked, setIsMainChecked] = useState<boolean>(false);
+
+  const context = useContext(PaginationContext);
+  if (!context) throw new Error("Provide cotext first");
+  const { setTotalPages, contentPerPage, currentPage } = context;
+
+  useEffect(() => {
+    const ordersLength = customers.length;
+    const totalPages = Math.ceil(ordersLength / contentPerPage);
+    setTotalPages(totalPages);
+  });
+
+  const start = (currentPage - 1) * contentPerPage;
+  const end = start + contentPerPage;
 
   function handleCheckboxChange(customer_id: number) {
     // first check if the customer_id is already in selectedIds array
@@ -56,7 +71,7 @@ function Customers() {
 
       {/* customers */}
       <div className="flex flex-col gap-4">
-        {customers.map((customer) => (
+        {customers.slice(start, end).map((customer) => (
           <div className="grid grid-cols-[0.2fr,1fr,1fr,1fr,1fr,0.4fr] items-center">
             <input
               onChange={() => handleCheckboxChange(customer.customer_id)}
