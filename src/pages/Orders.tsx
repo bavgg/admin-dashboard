@@ -2,6 +2,7 @@ import { ChevronUpIcon } from "@heroicons/react/24/outline";
 import { ordersData } from "../data/data";
 import { useContext, useEffect, useState } from "react";
 import { PaginationContext } from "../contexts/PaginationContext";
+import Pagination from "../components/Pagination";
 
 function Orders() {
   const [orders, setOrders] = useState(ordersData);
@@ -130,6 +131,7 @@ function Orders() {
           </div>
         ))}
       </div>
+      <Pagination />
     </div>
   );
 }

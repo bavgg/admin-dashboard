@@ -30,7 +30,9 @@ function Home() {
 
       {/* revenue */}
       <div className="flex gap-4 h-[300px]">
-        <LineChart data={LineChartData} />
+        <div className="rounded-md w-[500px] bg-white mt-4 text-sky-400 h-[300px]">
+          <LineChart data={LineChartData} xTickValues={[]} yTickValues={[]}/>
+        </div>
         <BarChart />
       </div>
     </div>

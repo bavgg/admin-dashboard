@@ -1,24 +1,19 @@
 import { ResponsiveBar } from "@nivo/bar";
-import { BarchartData } from "../../data/data";
+import { colorMappingData } from "../data/data";
 
-// type BarchartProps = {
-
-// }
-
-function BarChart() {
-    const tickValues = [0, 100, 200, 300, 400];
+function ColorMapping() {
   return (
-    <div className="rounded-md w-[500px] bg-white mt-4">
+    <div className="h-[500px]">
       <ResponsiveBar
-        data={BarchartData}
-        keys={["Budget", "Expense"]}
+        data={colorMappingData}
+        keys={["temp"]}
         indexBy="month"
-        margin={{ top: 50, right: 100, bottom: 50, left: 60 }}
-        padding={0.5}
+        margin={{ top: 50, right: 130, bottom: 50, left: 60 }}
+        padding={0.3}
+        groupMode="grouped"
         valueScale={{ type: "linear" }}
         indexScale={{ type: "band", round: true }}
-        colors={({ id }) => id === "Budget" ? "#FDA5A5" : "#7ED3FC"}
-
+        colors={{ scheme: "nivo" }}
         defs={[
           {
             id: "dots",
@@ -63,24 +58,20 @@ function BarChart() {
           tickSize: 5,
           tickPadding: 5,
           tickRotation: 0,
-          legend: "",
+          legend: "country",
           legendPosition: "middle",
           legendOffset: 32,
           truncateTickAt: 0,
         }}
         axisLeft={{
-          tickSize: 0,
+          tickSize: 5,
           tickPadding: 5,
           tickRotation: 0,
-          legend: "",
+          legend: "food",
           legendPosition: "middle",
           legendOffset: -40,
           truncateTickAt: 0,
-          tickValues: tickValues,
         }}
-        enableLabel={false}
-
-        gridYValues={tickValues}
         labelSkipWidth={12}
         labelSkipHeight={12}
         labelTextColor={{
@@ -90,17 +81,25 @@ function BarChart() {
         legends={[
           {
             dataFrom: "keys",
-            anchor: "right",
+            anchor: "bottom-right",
             direction: "column",
             justify: false,
-            translateX: 10,
-            translateY: 80,
-            itemWidth: 0,
-            itemHeight: 26,
-            itemsSpacing: 0,
-            symbolSize: 20,
+            translateX: 120,
+            translateY: 0,
+            itemsSpacing: 2,
+            itemWidth: 100,
+            itemHeight: 20,
             itemDirection: "left-to-right",
-            
+            itemOpacity: 0.85,
+            symbolSize: 20,
+            effects: [
+              {
+                on: "hover",
+                style: {
+                  itemOpacity: 1,
+                },
+              },
+            ],
           },
         ]}
         role="application"
@@ -108,20 +107,9 @@ function BarChart() {
         barAriaLabel={(e) =>
           e.id + ": " + e.formattedValue + " in country: " + e.indexValue
         }
-        theme={
-          {
-            "text": {
-              "fontWeight": 300,
-              "fontSize": 11,
-              "fill": "#6C7180",
-              "outlineWidth": 0,
-              "outlineColor": "transparent"
-            },
-          }
-        }
       />
     </div>
   );
 }
 
-export default BarChart;
+export default ColorMapping;

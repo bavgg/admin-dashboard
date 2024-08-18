@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { links } from "../data/data";
 import { User } from "../assets/icons";
 import { SidebarContext } from "../contexts/SidebarContext";
+import { Link } from "react-router-dom";
 
 function Sidebar() {
   const context = useContext(SidebarContext);
@@ -27,11 +28,13 @@ function Sidebar() {
           {/* links */}
           <div className="flex flex-col gap-8 ">
             {link.links.map((link) => (
-              <div key={link.name} className=" flex gap-2 items-center">
-                <div>{link.icon}</div>
-
-                <span className=" whitespace-nowrap">{link.name}</span>
-              </div>
+              <Link to={link.path}>
+                <div key={link.name} className=" cursor-pointer flex gap-2 items-center">
+                  <div>{link.icon}</div>
+                
+                  <span className=" whitespace-nowrap">{link.name}</span>
+                </div>
+              </Link>
             ))}
           </div>
         </div>

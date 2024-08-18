@@ -1,15 +1,9 @@
 import { ResponsiveBar } from "@nivo/bar";
-import { BarchartData } from "../../data/data";
+import { BarchartData } from "../data/data";
 
-// type BarchartProps = {
-
-// }
-
-function BarChart() {
-    const tickValues = [0, 100, 200, 300, 400];
-  return (
-    <div className="rounded-md w-[500px] bg-white mt-4">
-      <ResponsiveBar
+function Stacked() {
+  return <div className="h-[500px]">
+    <ResponsiveBar
         data={BarchartData}
         keys={["Budget", "Expense"]}
         indexBy="month"
@@ -76,11 +70,11 @@ function BarChart() {
           legendPosition: "middle",
           legendOffset: -40,
           truncateTickAt: 0,
-          tickValues: tickValues,
+        //   tickValues: tickValues,
         }}
         enableLabel={false}
 
-        gridYValues={tickValues}
+        // gridYValues={tickValues}
         labelSkipWidth={12}
         labelSkipHeight={12}
         labelTextColor={{
@@ -120,8 +114,7 @@ function BarChart() {
           }
         }
       />
-    </div>
-  );
+  </div>;
 }
 
-export default BarChart;
+export default Stacked;
